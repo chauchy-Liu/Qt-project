@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/${workspaceFolderBasename}.app/Contents/MacOS/${workspaceFolderBasename}",
+            "args": [],
+            // "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Build",
+            // "environment": [],
+            // "externalConsole": false,
+            "terminal": "console",
+            // "osx": {
+            //     "MIMode": "lldb"
+            // },
+            // "linux": {
+            //     "MIMode": "gdb",
+            //     "setupCommands": [
+            //         {
+            //             "description": "Enable pretty-printing for gdb",
+            //             "text": "-enable-pretty-printing",
+            //             "ignoreFailures": true
+            //         }
+            //     ]
+            // },
+            "windows": {
+                "program": "${workspaceFolder}/build/${workspaceFolderBasename}"
+            },
+            // "visualizerFile": "/Users/liuchuanxi/Library/Application Support/Code/User/workspaceStorage/8a5d47b53b311182bce2c87223499096/tonka3000.qtvsctools/qt.natvis.xml"
+        }
+    ]
+}

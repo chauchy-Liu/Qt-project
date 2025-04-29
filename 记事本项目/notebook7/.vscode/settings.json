@@ -1,0 +1,14 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/CMakeLists.txt",
+    "qt-ui.customWidgetsDesignerExePath": "/opt/homebrew/Cellar/qt/6.8.2/bin/Designer",
+    "files.associations": {
+        "ios": "cpp",
+        "string": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp"
+    }
+}

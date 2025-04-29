@@ -1,0 +1,1 @@
+Program 45-QFile001 write something to this File, 我是传玺, 文本字符流

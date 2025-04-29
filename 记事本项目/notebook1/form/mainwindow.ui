@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>传玺记事本</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/res.qrc">
+    <normaloff>:/icon/res/sketchbook.png</normaloff>:/icon/res/sketchbook.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>551</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widgetButton" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(111, 113, 113);</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>548</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="hLayoutButton">
+         <item>
+          <widget class="QPushButton" name="btnOpen">
+           <property name="styleSheet">
+            <string notr="true">QPushButton { background-color: rgb(255, 255, 255); }
+QPushButton:hover { color: red;}
+QPushButton:pressed { color: blue;}</string>
+           </property>
+           <property name="text">
+            <string>打开</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnClose">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {background-color: rgb(255, 255, 255);}
+QPushButton:hover { color: red;}
+QPushButton:pressed { color: blue;}</string>
+           </property>
+           <property name="text">
+            <string> 关闭</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSave">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {background-color: rgb(255, 255, 255);}
+QPushButton:hover { color: red;}
+QPushButton:pressed { color: blue;}</string>
+           </property>
+           <property name="text">
+            <string>保存</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnOpenIcon">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {border-image: url(:/icon/res/open.png);}
+QPushButton:hover {border-image: url(:/icon/res/open2.png);}
+QPushButton:pressed {border-image: url(:/icon/res/open3.png)}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCloseIcon">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {border-image: url(:/icon/res/delete.png);}
+QPushButton:hover {border-image: url(:/icon/res/close2.png);}
+QPushButton:pressed {border-image: url(:/icon/res/close3.png);}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSaveIcon">
+           <property name="minimumSize">
+            <size>
+             <width>20</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {border-image: url(:/icon/res/save.png);}
+QPushButton:hover {border-image: url(:/icon/res/save2.png);}
+QPushButton:pressed {border-image: url(:/icon/res/save3.png);}
+
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+        <zorder>horizontalSpacer</zorder>
+        <zorder>btnClose</zorder>
+        <zorder>btnOpen</zorder>
+        <zorder>btnSave</zorder>
+        <zorder>btnOpenIcon</zorder>
+        <zorder>btnCloseIcon</zorder>
+        <zorder>btnSaveIcon</zorder>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="statWidget" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(111, 113, 113);</string>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>551</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="bottomHLayout">
+         <item>
+          <spacer name="statLeftHSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QLabel" name="posLabel">
+           <property name="text">
+            <string>1行，1列</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="codeLabel">
+           <property name="text">
+            <string>utf-8</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="statRightHSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Policy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>552</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuwidget">
+    <property name="title">
+     <string>widget</string>
+    </property>
+   </widget>
+   <addaction name="menuwidget"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

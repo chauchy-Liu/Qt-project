@@ -1,0 +1,23 @@
+{
+    "[cpp]": {
+        "files.encoding": "utf8"
+    },
+    "[c]": {
+        "files.encoding": "utf8"
+    },
+    // "terminal.integrated.fontFamily": "Arial Unicode MS",
+    "cmake.outputLogEncoding": "utf-8",
+    //"terminal.integrated.encoding": "utf8",
+    "cmake.environment": {
+        "LANG": "en_US.UTF-8"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/CMakeLists.txt",
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "qapplication": "cpp"
+    },
+    //设置
+    "qt-ui.customWidgetsDesignerExePath": "/opt/homebrew/Cellar/qt/6.8.2/bin/Designer"
+}
