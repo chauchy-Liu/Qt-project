@@ -1,0 +1,36 @@
+// 里面记载的是项目（文件夹）路径地址
+{
+    "folders": [
+        {
+            // "name": " name", //覆盖文件夹的显示名称
+            "path": "串口调试助手项目/assistant1" //文件夹路径地址
+        },
+        {
+            "path": "记事本项目/notebook1"
+        },
+        {
+            "path": "记事本项目/notebook2"
+        },
+        {
+            "path": "记事本项目/notebook3"
+        },
+        {
+            "path": "记事本项目/notebook4"
+        },
+        {
+            "path": "记事本项目/notebook5"
+        },
+        {
+            "path": "记事本项目/notebook6"
+        },
+        {
+            "path": "记事本项目/notebook7"
+        },
+        {
+            "path": "project1"
+        },
+        {
+            "path": "project2"
+        }
+    ]
+}

@@ -25,6 +25,14 @@ private slots:
     void on_sendPushButton_clicked();
     void onSerialDataReadyToRead();
     void on_timeSendCheckBox_clicked(bool checked);
+    void on_clearPushButton_clicked();
+    void on_saveRevPushButton_clicked();
+    void refreshStatusTime();
+    void on_revTimeCheckBox_clicked(bool checked);
+    void on_hexShowCheckBox_clicked(bool checked);
+    void on_hideBoardPushButton_clicked(bool checked);
+    void on_hideHisPushButton_clicked(bool checked);
+    // void on_chuanComboBox_activated(int index);
 
 private:
     Ui::MainWindow *ui;
@@ -34,6 +42,11 @@ private:
     QString sendHis;
     bool isSerialPortOpen;
     QTimer* timer;
+    QString myTime;
+    bool isTimeBoxChecked;
+
+
+    void getSystemTime();
 
 };
 #endif // MAINWINDOW_H

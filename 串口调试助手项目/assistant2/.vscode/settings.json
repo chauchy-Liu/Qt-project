@@ -5,7 +5,8 @@
         "*.ndjson": "jsonl",
         "*.dbclient-js": "javascript",
         "qapplication": "cpp",
-        "string": "cpp"
+        "__node_handle": "cpp",
+        "optional": "cpp"
     },
     "qt-ui.customWidgetsDesignerExePath": "/opt/homebrew/Cellar/qt/6.8.2/bin/Designer"
 }
