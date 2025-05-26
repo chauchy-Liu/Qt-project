@@ -1,1 +1,0 @@
-在 /Users/liuchuanxi/项目/QT/Qt-project/网络调试助手/network1 中找不到 CMakeLists.txt 选择 CMakeLists.txt

@@ -30,4 +30,4 @@ message("打印AUTOUIC路径${CMAKE_AUTOUIC_SEARCH_PATHS}")
 # 生成链接库
 add_library (MainWindow STATIC ${SRC} ${INC} ${QRC})
 target_include_directories(MainWindow PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/) # 必须是目录
-target_link_libraries(MainWindow PUBLIC Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(MainWindow PUBLIC Qt${QT_VERSION_MAJOR}::Widgets Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Gui Qt${QT_VERSION_MAJOR}::Network)

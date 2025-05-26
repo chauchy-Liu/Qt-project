@@ -14,7 +14,7 @@
    <string>网络调试助手-服务端</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -98,7 +98,7 @@
         <widget class="QComboBox" name="ipComboBox">
          <property name="minimumSize">
           <size>
-           <width>103</width>
+           <width>130</width>
            <height>0</height>
           </size>
          </property>

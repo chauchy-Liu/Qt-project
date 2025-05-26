@@ -29,7 +29,7 @@ private slots:
     void on_newClient_connect();
     void on_startPushButton_clicked();
     void on_readyRead_handler();
-    void on_disconnected_handler();
+    // void on_disconnected_handler();
     void on_socketStateChanged_handler(QAbstractSocket::SocketState socketState);
     void on_sendPushButton_clicked();
     void on_socketComboBox_handler();
