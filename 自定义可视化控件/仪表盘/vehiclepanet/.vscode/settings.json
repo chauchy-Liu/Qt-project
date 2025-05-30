@@ -1,0 +1,10 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/CMakeLists.txt",
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "qapplication": "cpp"
+    },
+    "qt-ui.customWidgetsDesignerExePath": "/opt/homebrew/Cellar/qt/6.8.2/bin/Designer"
+}

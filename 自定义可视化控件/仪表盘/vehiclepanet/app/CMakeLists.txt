@@ -1,7 +1,7 @@
 # cmake_minimum_required(VERSION 3.16)
 
 # #项目名称
-# project(project3 VERSION 0.1 LANGUAGES CXX)
+# project(vehiclepanet VERSION 0.1 LANGUAGES CXX)
 
 # set(CMAKE_AUTOUIC ON) #用户界面编译器，将根据.ui文件生成相应的.h文件，例如根据mainwindow.ui生成ui_mainwindow.h。
 # set(CMAKE_AUTOMOC ON)#元对象编译器，用于处理QT拓展的C++语法。
@@ -29,7 +29,7 @@ aux_source_directory(. SRC)
 #CMAKE_CURRENT_SOURCE_DIR 宏表示当前访问的 CMakeLists.txt 文件所在的路径。
 # FILE(GLOB INC "mainwindow/include/*.h")
 # 添加qrc文件
-file(GLOB_RECURSE QRC LIST_DIRECTORIES true "../*.qrc")
+ file(GLOB_RECURSE QRC LIST_DIRECTORIES true "../*.qrc")
 #CMAKE_AUTOUIC_SEARCH_PATHS告诉 CMake 哪些目录下的 .ui 文件应该被 AutoUic 处理。设置了这个变量后，CMake 将会在这些指定的目录下搜索 .ui 文件，并将它们转换为相应的头文件.h。
 # list(APPEND CMAKE_AUTOUIC_SEARCH_PATHS "form")
 
@@ -48,48 +48,48 @@ set(PROJECT_SOURCES
     # ${HEADER_DIR}
     ${SRC}
     # ${INC}
-    ${QRC}
+     ${QRC}
 )
 
-# add_executable(project3 
+# add_executable(vehiclepanet 
 #     ${PROJECT_SOURCES}
 # )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(project3
+    qt_add_executable(vehiclepanet
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
 # Define target properties for Android with Qt 6 as:
-#    set_property(TARGET project3 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
+#    set_property(TARGET vehiclepanet APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(project3 SHARED
+        add_library(vehiclepanet SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         # 定义工程会生成一个可执行程序 add_executable(可执行程序名 源文件名称)
-        add_executable(project3
+        add_executable(vehiclepanet
             ${PROJECT_SOURCES}
         )
     endif()
 endif()
 
-# target_include_directories(project3 PRIVATE include)
+# target_include_directories(vehiclepanet PRIVATE include)
 
-target_link_libraries(project3 PUBLIC  MainWindow) #Qt${QT_VERSION_MAJOR}::Widgets
+target_link_libraries(vehiclepanet PUBLIC  MainWindow) #Qt${QT_VERSION_MAJOR}::Widgets
 
 # # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # # If you are developing for iOS or macOS you should consider setting an
 # # explicit, fixed bundle identifier manually though.
 # if(${QT_VERSION} VERSION_LESS 6.1.0)
-#   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.project3)
+#   set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.vehiclepanet)
 # endif()
-# set_target_properties(project3 PROPERTIES
+# set_target_properties(vehiclepanet PROPERTIES
 #     ${BUNDLE_ID_OPTION}
 #     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
 #     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -98,12 +98,12 @@ target_link_libraries(project3 PUBLIC  MainWindow) #Qt${QT_VERSION_MAJOR}::Widge
 # )
 
 # include(GNUInstallDirs)
-# install(TARGETS project3
+# install(TARGETS vehiclepanet
 #     BUNDLE DESTINATION .
 #     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 #     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 # )
 
 # if(QT_VERSION_MAJOR EQUAL 6)
-#     qt_finalize_executable(project3)
+#     qt_finalize_executable(vehiclepanet)
 # endif()

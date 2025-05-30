@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/logol">
+    <file>images/porch.png</file>
+  </qresource>
+</RCC>
