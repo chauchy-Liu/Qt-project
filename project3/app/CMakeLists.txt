@@ -29,7 +29,8 @@ aux_source_directory(. SRC)
 #CMAKE_CURRENT_SOURCE_DIR 宏表示当前访问的 CMakeLists.txt 文件所在的路径。
 # FILE(GLOB INC "mainwindow/include/*.h")
 # 添加qrc文件
-file(GLOB_RECURSE QRC LIST_DIRECTORIES true "../*.qrc")
+file(GLOB_RECURSE QRC LIST_DIRECTORIES false "../*.qrc")
+message("app目录下CmakeList中QRC文件路径：${QRC}")
 #CMAKE_AUTOUIC_SEARCH_PATHS告诉 CMake 哪些目录下的 .ui 文件应该被 AutoUic 处理。设置了这个变量后，CMake 将会在这些指定的目录下搜索 .ui 文件，并将它们转换为相应的头文件.h。
 # list(APPEND CMAKE_AUTOUIC_SEARCH_PATHS "form")
 

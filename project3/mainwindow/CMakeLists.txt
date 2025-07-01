@@ -12,7 +12,8 @@ aux_source_directory(src SRC)
 message("打印CMAKE_CURRENT_SOURCE_DIR路径${CMAKE_CURRENT_SOURCE_DIR}")
 FILE(GLOB INC "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
 # 添加qrc文件
-# file(GLOB QRC "${CMAKE_CURRENT_SOURCE_DIR}/resources/*.qrc")
+file(GLOB QRC "${CMAKE_CURRENT_SOURCE_DIR}/resources/*.qrc")
+message("src目录下CmakeList中QRC文件路径：${QRC}")
 #CMAKE_AUTOUIC_SEARCH_PATHS告诉 CMake 哪些目录下的 .ui 文件应该被 AutoUic 处理。设置了这个变量后，CMake 将会在这些指定的目录下搜索 .ui 文件，并将它们转换为相应的头文件.h。
 message("打印AUTOUIC路径${CMAKE_AUTOUIC_SEARCH_PATHS}")
 list(APPEND CMAKE_AUTOUIC_SEARCH_PATHS "form")
@@ -28,6 +29,6 @@ message("打印AUTOUIC路径${CMAKE_AUTOUIC_SEARCH_PATHS}")
 
 
 # 生成链接库
-add_library (MainWindow STATIC ${SRC} ${INC})
+add_library (MainWindow STATIC ${SRC} ${INC} ${QRC})
 target_include_directories(MainWindow PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/) # 必须是目录
 target_link_libraries(MainWindow PUBLIC Qt${QT_VERSION_MAJOR}::Widgets)

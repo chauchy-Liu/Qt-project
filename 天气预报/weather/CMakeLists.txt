@@ -12,10 +12,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Core Network Gui)
 # 添加 mainwindow 子目录
 add_subdirectory(mainwindow)
 add_subdirectory(app)
+add_subdirectory(utils)
+add_subdirectory(day)
 
 
 # # set(HEADER_DIR ${CMAKE_SOURCE_DIR}/include)

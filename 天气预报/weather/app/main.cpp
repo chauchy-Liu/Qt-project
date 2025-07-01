@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 
 #include <QApplication>
+#include "mapUtil/CityCodeUtils.h"
+
 
 int main(int argc, char *argv[])
 {
