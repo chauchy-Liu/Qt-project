@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>254</width>
+      <height>464</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="6" column="1">
+        <widget class="QComboBox" name="selectComboBox">
+         <item>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Item</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Row</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ItemAndRow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Column</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ItemAndColumn</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RowAndColumn</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ItemRowAndColumn</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SelectionSlice</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>SelectionMultiSeries</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QComboBox" name="barComboBox">
+         <item>
+          <property name="text">
+           <string>UserDefined</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Bar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cube</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pyramid</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cone</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cylinder</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BevelBar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BevelCube</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Sphere</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Minimal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Arrow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Point</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="themeComboBox">
+         <item>
+          <property name="text">
+           <string>Qt</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>PrimaryColors</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Digia</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>StoneMoss</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ArmyBlue</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Retro</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Isabelle</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>UserDefined</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="hSpinLabel">
+         <property name="text">
+          <string>水平旋转</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="sightLabel">
+         <property name="text">
+          <string>预设视角</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="barLabel">
+         <property name="text">
+          <string>棒图样式</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="sightComboBox">
+         <item>
+          <property name="text">
+           <string>None</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FrontLow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Front</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FrontHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LeftLow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Left</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LeftHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RightLow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Right</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RightHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BehindLow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Behind</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BehindHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IsometricLeft</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IsometricLeftHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IsometricRight</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>IsometricRightHigh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DirectlyAbove</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DirectlyAboveCW45</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DirectlyAboveCCW45</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>FrontBelow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>LeftBelow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>RightBelow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>BehindBelow</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>DirectlyBelow</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSlider" name="scaleSlider">
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="sliderPosition">
+          <number>99</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QSpinBox" name="fontSpinBox">
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSlider" name="vSpinSlider">
+         <property name="sliderPosition">
+          <number>30</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="themeLabel">
+         <property name="text">
+          <string>主题</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="vSpinLabel">
+         <property name="text">
+          <string>垂直旋转</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="fontLabel">
+         <property name="text">
+          <string>字体大小</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="scaleLabel">
+         <property name="text">
+          <string>缩放</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="selectLabel">
+         <property name="text">
+          <string>选择模式</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSlider" name="hSpinSlider">
+         <property name="sliderPosition">
+          <number>30</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TickPosition::NoTicks</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="itemBtn">
+       <property name="text">
+        <string>项的颜色</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="backgroundCheckBox">
+         <property name="text">
+          <string>显示背景</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="gridCheckBox">
+         <property name="text">
+          <string>显示背景网格</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="smoothCheckBox">
+         <property name="text">
+          <string>光滑效果</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="invertShadeCheckBox">
+         <property name="text">
+          <string>显示倒影</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="invertValueCheckBox">
+         <property name="text">
+          <string>数值坐标轴反向</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="itemLabelCheckBox">
+         <property name="text">
+          <string>项的标签可见</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QCheckBox" name="axisTitleCheckBox">
+         <property name="text">
+          <string>坐标轴标题可见</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QCheckBox" name="axisLabelCheckBox">
+         <property name="text">
+          <string>坐标轴标签背景可见</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

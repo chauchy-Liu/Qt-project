@@ -1,0 +1,15 @@
+<RCC>
+  <qresource>
+    <file>images/theme.png</file>
+    <file>images/axes.png</file>
+    <file>images/bar.png</file>
+    <file>images/line.png</file>
+    <file>images/magnifier.png</file>
+    <file>images/out.png</file>
+    <file>images/pie.png</file>
+    <file>images/sine.png</file>
+    <file>images/thunder.png</file>
+    <file>images/zoomin.png</file>
+    <file>images/zoomout.png</file>
+  </qresource>
+</RCC>

@@ -3,6 +3,26 @@ cmake_minimum_required(VERSION 3.16)
 #项目名称
 project(project3 VERSION 0.1 LANGUAGES CXX)
 
+#系统信息
+message("操作系统${CMAKE_SYSTEM}")
+
+#CMake信息
+message("CMake版本号: ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION}.${CMAKE_PATCH_VERSION}")
+
+#编译类型
+message("编译类型${CMAKE_BUILD_TYPE}")
+
+#设置环境：如果很多库你都安装了多个版本，一定要先把库的安装路径追加到 “CMAKE_PREFIX_PATH” 变量中, 这个变量影响 CMake 在查找包（包括库和程序）时应考虑哪些路径，它可以被设置为一个或多个路径，这些路径使用分号 (;) 分隔，在find_package()，注意使用 “版本号 EXACT” 关键字修饰，帮你判断是否找到指定版本
+set(CMAKE_PREFIX_PATH "$(brew --prefix qt@6);") # /opt/homebrew/Cellar/qt/5.9.0/lib/cmake/
+
+# 追加指定版本库的安装路径，用于给find_package指定路径
+#list(APPEND CMAKE_PREFIX_PATH "指定版本库的安装路径")
+
+#set(Qt_DIR "/opt/homebrew/Cellar/qt/6.9.0/lib/cmake/Qt6/")
+
+#指定Qt版本号
+set(QT_VERSION_MAJOR 6)
+
 set(CMAKE_AUTOUIC ON) #用户界面编译器，将根据.ui文件生成相应的.h文件，例如根据mainwindow.ui生成ui_mainwindow.h。
 set(CMAKE_AUTOMOC ON)#元对象编译器，用于处理QT拓展的C++语法。
 set(CMAKE_AUTORCC ON)#rcc工具用于在构建过程中将资源嵌入到Qt应用程序中
@@ -11,7 +31,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+# find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 # 添加 mainwindow 子目录
 add_subdirectory(mainwindow)
@@ -82,9 +102,9 @@ add_subdirectory(app)
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
-if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.project3)
-endif()
+#if(${QT_VERSION} VERSION_LESS 6.1.0)
+#  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.project3)
+#endif()
 set_target_properties(project3 PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}

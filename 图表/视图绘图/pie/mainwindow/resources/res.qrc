@@ -1,0 +1,33 @@
+<RCC>
+  <qresource>
+    <file>images/bar.png</file>
+    <file>images/out.png</file>
+    <file>images/percent.png</file>
+    <file>images/pie.png</file>
+    <file>images/pie2.png</file>
+    <file>images/scatter.png</file>
+    <file>images/stacked.png</file>
+    <file>images/statistics.png</file>
+    <file>images/theme.png</file>
+    <file>images/thunder.png</file>
+    <file>images/background.png</file>
+    <file>images/ball.png</file>
+    <file>images/combine.png</file>
+    <file>images/delete.png</file>
+    <file>images/divorce.png</file>
+    <file>images/ellipse.png</file>
+    <file>images/foreground.png</file>
+    <file>images/leave.png</file>
+    <file>images/left.png</file>
+    <file>images/line.png</file>
+    <file>images/poly.png</file>
+    <file>images/rectangle.png</file>
+    <file>images/restore.png</file>
+    <file>images/right.png</file>
+    <file>images/scope.png</file>
+    <file>images/text.png</file>
+    <file>images/triangle.png</file>
+    <file>images/zoomin.png</file>
+    <file>images/zoomout.png</file>
+  </qresource>
+</RCC>
